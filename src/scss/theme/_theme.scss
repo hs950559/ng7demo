@@ -1,10 +1,6 @@
-﻿/*$enable-flex:               true;
-$enable-grid-classes:       true;
-$enable-rounded: 			false;*/
-
+﻿@import "variables";
 @import "~bootswatch/dist/cosmo/_variables";
 @import "~bootstrap/scss/bootstrap";
 @import "~bootswatch/dist/cosmo/_bootswatch";
-@import "variables";
 @import "fonts";
 @import "themify-icons";

@@ -1,29 +1,4 @@
 <div class="container">
-  <h1>Github Repos </h1>
-  <ng-template #loadingOrError>
-      <i class="loading" *ngIf="loading">Loading...</i>
-  </ng-template>
-  <table class='table table-responsive'>
-    <thead>
-      <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>HTML Url</th>
-        <th>description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <ng-container *ngIf="(repos$ | async) as repos; else loadingOrError">
-            <tr *ngFor="let repo of repos;">
-                <td>{{repo.id}}</td>
-                <td>{{repo.name}}</td>
-                <td>{{repo.html_url}}</td>
-                <td>{{repo.description}}</td>
-              </tr>
-       </ng-container>
-
-    </tbody>
-  </table>
+  <h1>Hello Angular <i class="ti-user"></i></h1>
+  <button class="btn btn-primary">Click Me</button>
 </div>
-
-<router-outlet></router-outlet>
